@@ -25,7 +25,7 @@ func initDB() {
 	if err := db.Ping(); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Database is connected successfully")
+	fmt.Println("Database is connected successfull")
 }
 
 func main() {
