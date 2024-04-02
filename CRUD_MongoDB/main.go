@@ -32,7 +32,7 @@ func main() {
  
     app.Put("/person/:id", updatePerson)
  
-    app.Delete("/person/:id", deletePerson)
+    app.Delete("/persons/:id", deletePerson)
  
  
     log.Fatal(app.Listen(":3000"))
@@ -91,7 +91,7 @@ func updatePerson(c *fiber.Ctx) error {
         return err
     }
  
-    return c.SendString("Person updated successfully")
+    return c.SendString("Person successfully updated")
 }
 func deletePerson(c *fiber.Ctx) error {
     id := c.Params("id")
@@ -102,5 +102,5 @@ func deletePerson(c *fiber.Ctx) error {
         return err
     }
  
-    return c.SendString("Person deleted successfully")
+    return c.SendString("Person successfully deleted")
 }

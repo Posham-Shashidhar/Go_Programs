@@ -17,6 +17,6 @@ func main() {
 
     // Start the Fiber server on port 3000
     if err := app.Listen(":3000"); err != nil {
-        log.Fatalf("Error starting server: %v", err)
+        log.Fatalf("Error in server: %v", err)
     }
 }

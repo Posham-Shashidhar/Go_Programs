@@ -20,7 +20,7 @@ func main() {
 	})
 
 	app.Get("/hello",func(c *fiber.Ctx) error {
-		return c.SendString("Hello fiber!!!!")
+		return c.SendString("Hello fiber$$$$")
 	})
 
 	app.Listen(":8080")
